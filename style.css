@@ -1,0 +1,56 @@
+body {
+	background-color: blue;
+	font-size: large;
+}
+#small
+{
+	display:none;
+}
+#medium
+{
+	display: none;
+}
+
+@media all and (min-width:300px) and (max-width: 768px)
+
+{
+	body
+	{
+		background-color: green;
+		font-size: medium;
+	}
+	#large
+	{
+		display:none;
+	}
+	#small
+	{
+		display:none;
+	}
+	#medium
+	{
+		display:contents;
+	}
+
+}
+
+@media all and ( max-width: 300px)
+{
+	body
+	{
+		background-color: red;
+		font-size: small;
+	}
+	#large
+	{
+		display: none;
+	}
+	#medium
+	{
+		display: none;
+	}
+	#small
+	{
+		display: contents;
+	}
+}
