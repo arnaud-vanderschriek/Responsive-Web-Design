@@ -1,14 +1,26 @@
 body {
 	background-color: blue;
 	font-size: large;
+	display: flex;
+	
 }
 #small
 {
-	display:none;
+	width:auto;
+	height:auto;
+	background-color: white;
 }
 #medium
 {
-	display: none;
+	width: auto;
+	height:auto;
+	background-color: white;
+}
+#large
+{
+	width: auto;
+	height:auto;
+	background-color: white;
 }
 
 @media all and (min-width:300px) and (max-width: 768px)
@@ -18,39 +30,66 @@ body {
 	{
 		background-color: green;
 		font-size: medium;
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
 	}
 	#large
 	{
-		display:none;
+		margin:1%;
+		width:auto;
+		height:auto;
+		background-color: white;
 	}
 	#small
 	{
-		display:none;
+		margin:1%;
+		width:auto;
+		height:auto;
+		background-color: white;
 	}
 	#medium
 	{
-		display:contents;
+		margin: 1%;
+		width:auto;
+		height: auto;
+		background-color: white;
 	}
 
 }
 
-@media all and ( max-width: 300px)
+@media all and (min-width:100px) and ( max-width: 299px)
 {
 	body
 	{
+		display: flex;
+		flex-direction:column;
 		background-color: red;
 		font-size: small;
+	
+	}
+	h1
+	{
+		font-size: 1em;
 	}
 	#large
 	{
-		display: none;
+		margin: 1%;
+		width:auto;
+		height:auto;
+		background-color: white;
 	}
 	#medium
 	{
-		display: none;
+		margin: 1%;
+		width: auto;
+		height:auto;
+		background-color: white;
 	}
 	#small
 	{
-		display: contents;
+		margin: 1%;
+		width: auto;
+		height:auto;
+		background-color: white;
 	}
 }
